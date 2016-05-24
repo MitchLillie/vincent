@@ -12,89 +12,67 @@
     <!-- <audio id="track" controls></audio> -->
     <div class="container">
         <div class="column center">
-            <h1>HTML5 Audio Player</h1>
-            <h6>w/ responsive playlist</h6>
+            <div id="plwrap">
+                <ul id="plList">
+                    <li>
+                        <div class="plItem">
+                            <div class="plTitle">I Am Only A Man</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="plItem">
+                            <div class="plTitle">You Like The Pain Too</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="plItem">
+                            <div class="plTitle">Say You Will</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="plItem">
+                            <div class="plTitle">Time (Hell Won't Wait For Us)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="plItem">
+                            <div class="plTitle">Watercolor Dreams</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="plItem">
+                            <div class="plTitle">What If I Can</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="plItem">
+                            <div class="plTitle">Trivial Motion</div>
+                        </div>
+                    </li>
+                    <li style="padding-bottom:20px;">
+                        <div class="plItem">
+                            <div class="plTitle">Run Back Home</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="column add-bottom">
             <div id="mainwrap">
-                <div id="nowPlay">
-                    <span class="left" id="npAction">Paused...</span>
-                    <span class="right" id="npTitle"></span>
-                </div>
-                <div id="audiowrap">
-                    <div id="audio0">
-                        <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
-                    </div>
-                    <div id="tracks">
-                        <a id="btnPrev">&laquo;</a>
-                        <a id="btnNext">&raquo;</a>
-                    </div>
-                </div>
-                <div id="plwrap">
-                    <ul id="plList">
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">01.</div>
-                                <div class="plTitle">I Am Only A Man</div>
-                                <div class="plLength">4:09</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">02.</div>
-                                <div class="plTitle">You Like The Pain Too</div>
-                                <div class="plLength">2:43</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">03.</div>
-                                <div class="plTitle">Say You Will</div>
-                                <div class="plLength">3:16</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">04.</div>
-                                <div class="plTitle">Time (Hell Won't Wait For Us)</div>
-                                <div class="plLength">3:09</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">05.</div>
-                                <div class="plTitle">Watercolor Dreams</div>
-                                <div class="plLength">3:33</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">06.</div>
-                                <div class="plTitle">What If I Can</div>
-                                <div class="plLength">2:49</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">07.</div>
-                                <div class="plTitle">Trivial Motion</div>
-                                <div class="plLength">3:45</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">08.</div>
-                                <div class="plTitle">Run Back Home</div>
-                                <div class="plLength">5:27</div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
-        <div class="column add-bottom center">
-            <p>Created by <a href="http://www.markhillard.com/">mh</a>. Music by <a href="http://www.mythium.net/">Mythium</a>.</p>
-            <p>Download: <a href="https://archive.org/download/mythium/mythium_vbr_mp3.zip">zip</a> / <a href="https://archive.org/download/mythium/mythium_archive.torrent">torrent</a></p>
+    </div>
+    <div id="player">
+        <div id="tracks">
+            <a id="btnPrev">&laquo;</a>
+            <a id="btnNext">&raquo;</a>
+        </div>
+        <div id="audio0">
+            <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+        </div>
+        <div id="nowPlay" class="right">
+            <span id="npTitle"></span>
+            <span class="right">&nbsp— Shy Girls</span>
         </div>
     </div>
   </body>
